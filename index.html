@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Nosso Amor 💖</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>FELIZ DIA DOS NAMORADOS</h1>
+
+    <!-- Música de fundo -->
+    <!-- Botão para tocar a música -->
+<button onclick="document.getElementById('musica').play()">▶️ Tocar Música</button>
+
+<audio id="musica" loop>
+    <source src="{{ url_for('static', filename='musica/eu_te_darei_o_ceu.mp3') }}" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+</audio>
+
+
+    <!-- Galeria de fotos e vídeos -->
+    <div class="galeria">
+
+        <div class="item">
+            <img src="{{ url_for('static', filename='fotos/foto1.jpg') }}" alt="Foto nossa">
+            <p>Esse dia faz parte do desenvolvimento da nossa relação ❤️</p>
+        </div>
+
+        <div class="item">
+    <img src="{{ url_for('static', filename='fotos/foto2.jpg') }}" alt="Foto 2">
+    <p>Saudades de ficar assim com vc todos os dias, agarradinho com meu amor</p>
+</div>
+
+<div class="item">
+    <img src="{{ url_for('static', filename='fotos/foto3.jpg') }}" alt="Foto 3">
+    <p>Amor da minha vida... ❤️</p>
+</div>
+
+        <div class="item">
+            <video controls width="300">
+                <source src="{{ url_for('static', filename='videos/video1.mp4') }}" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+            <p>Ainda nos conhecendo, porém eu já tinha a certeza que era vc que eu queria para minha vida</p>
+        </div>
+
+        <!-- Você pode copiar mais blocos como esses e mudar as imagens, vídeos e textos -->
+
+    </div>
+</body>
+</html>
